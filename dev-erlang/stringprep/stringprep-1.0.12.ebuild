@@ -1,4 +1,4 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
@@ -14,7 +14,7 @@ LICENSE="Apache-2.0 tcltk"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~ia64 ~ppc ~sparc ~x86"
 
-DEPEND=">=dev-erlang/p1_utils-1.0.11
+DEPEND=">=dev-erlang/p1_utils-1.0.12
 	>=dev-lang/erlang-17.1"
 RDEPEND="${DEPEND}"
 

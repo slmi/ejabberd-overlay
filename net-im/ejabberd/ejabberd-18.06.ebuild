@@ -17,7 +17,7 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 REQUIRED_USE="mssql? ( odbc )"
 # TODO: Add 'tools' flag.
-IUSE="captcha debug full-xml graphics hipe ldap mssql mysql nls odbc pam postgres redis
+IUSE="captcha debug full-xml hipe ldap mssql mysql nls odbc pam postgres redis
 	riak roster-gw sip sqlite stun zlib"
 
 RESTRICT="test"
@@ -41,7 +41,7 @@ CDEPEND="
 	>=dev-erlang/p1_oauth2-0.6.3
 	>=dev-erlang/p1_utils-1.0.12
 	>=dev-erlang/stringprep-1.0.12
-	>=dev-erlang/xmpp-1.1.21
+	>=dev-erlang/xmpp-1.2.1
 	>=dev-lang/erlang-17.1[hipe?,odbc?,ssl]
 	>=net-im/jabber-base-0.01
 	ldap? ( =net-nds/openldap-2* )
@@ -230,7 +230,6 @@ src_configure() {
 		--disable-system-deps \
 		$(use_enable debug) \
 		$(use_enable full-xml) \
-		$(use_enable graphics) \
 		$(use_enable hipe) \
 		$(use_enable mssql) \
 		$(use_enable mysql) \

@@ -17,7 +17,7 @@ IUSE="test"
 
 RDEPEND="media-libs/gd[png,jpeg,webp]
 	>=dev-lang/erlang-17.1
-	>=dev-erlang/p1_utils-1.0.11"
+	>=dev-erlang/p1_utils-1.0.12"
 DEPEND="${RDEPEND}"
 
 DOCS=( README.md LICENSE.txt )
